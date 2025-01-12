@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/timelines",
+	"name": "timeline/timeline",
 	"version": "0.1.0",
-	"title": "Timelines",
+	"title": "Timeline",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",

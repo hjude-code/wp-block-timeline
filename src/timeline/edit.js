@@ -31,9 +31,9 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Timeline – hello from the editor!', 'timeline' ) }
+		<div { ...useBlockProps() }>
+			<h1>Timeline</h1>
 			<InnerBlocks/>
-		</p>
+		</div>
 	);
 }
