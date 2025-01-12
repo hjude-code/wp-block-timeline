@@ -6,7 +6,17 @@
  */
 
 .wp-block-timeline-timeline {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	position: relative;
+}
+
+.wp-block-timeline-timeline::before{
+	content: "";
+	display:block;
+	position: absolute;
+	width: 2px;
+	background-color:black;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0px;
+	bottom: -10px;
 }

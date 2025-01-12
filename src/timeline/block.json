@@ -6,10 +6,12 @@
 	"title": "Timeline",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "A Timeline Container",
 	"example": {},
 	"supports": {
-		"html": false
+		"html": false,
+		"align": true,
+		"layout": true
 	},
 	"textdomain": "timeline",
 	"editorScript": "file:./index.js",

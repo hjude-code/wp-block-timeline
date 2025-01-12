@@ -8,7 +8,17 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-timeline-timeline {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+  position: relative;
+}
+
+.wp-block-timeline-timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  right: 50%;
+  transform: translateX(50%);
+  top: 0px;
+  bottom: -10px;
 }

@@ -32,8 +32,7 @@ import './editor.scss';
 export default function Edit() {
 	return (
 		<div { ...useBlockProps() }>
-			<h1>Timeline</h1>
-			<InnerBlocks/>
+				<InnerBlocks/>	
 		</div>
 	);
 }

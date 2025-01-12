@@ -4,5 +4,5 @@
  */
 ?>
 <p <?php echo get_block_wrapper_attributes(); ?>>
-	<?php esc_html_e( 'Timeline – hello from a dynamic block!', 'timeline' ); ?>
+	<?php echo $content ?>
 </p>
