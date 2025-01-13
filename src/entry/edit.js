@@ -50,6 +50,10 @@ export default function Edit({attributes, setAttributes}) {
 			
 		>
 		</MediaPlaceholder>
+
+		<span class="displayYear displayCentury">19</span>
+		<span class="displayYear displayDecade">70</span>
+
 		<div class="entryCover" style={cover}></div>
 		<InnerBlocks/>
 		</div>

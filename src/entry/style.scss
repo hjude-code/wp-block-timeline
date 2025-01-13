@@ -9,3 +9,11 @@
 	width: 100%;
 	aspect-ratio: 4 / 2;
 }
+
+.wp-block-timeline-entry :is(.block-editor-inner-blocks){
+	// background-color: white;
+	backdrop-filter:blur(50px) ;
+	padding: 2rem;
+	margin-top: -2rem;
+}
+

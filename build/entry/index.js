@@ -71,6 +71,12 @@ function Edit({
       labels: {
         title: 'The Image'
       }
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+      class: "displayYear displayCentury",
+      children: "19"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+      class: "displayYear displayDecade",
+      children: "70"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       class: "entryCover",
       style: cover
@@ -223,7 +229,7 @@ module.exports = window["wp"]["i18n"];
   \******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"timeline/entry","version":"0.1.0","title":"Timeline Entry","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false,"align":true,"background":{"backgroundImage":true,"backgroundSize":true}},"attributes":{"mediaURL":{"type":"string","default":"#"}},"textdomain":"timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"timeline/entry","version":"0.1.0","title":"Timeline Entry","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false,"align":true,"background":{"backgroundImage":true,"backgroundSize":true}},"attributes":{"mediaURL":{"type":"string","default":"#"},"date":{"type":"string","default":"1970"}},"textdomain":"timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
