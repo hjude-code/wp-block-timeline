@@ -21,9 +21,13 @@
       "type": "string",
       "default": "#"
     },
-    "date": {
+    "displayCentury": {
       "type": "string",
-      "default": "1970"
+      "default": "19"
+    },
+    "displayDecade": {
+      "type": "string",
+      "default": "70"
     }
   },
   "textdomain": "timeline",

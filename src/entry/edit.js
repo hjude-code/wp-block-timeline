@@ -11,7 +11,9 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps, InnerBlocks, MediaPlaceholder, MediaUpload } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks, MediaPlaceholder, MediaUpload, InspectorControls } from '@wordpress/block-editor';
+import {Panel, PanelBody, PanelHeader, PanelRow, TextControl} from '@wordpress/components';
+import {useState} from 'react';
 
 
 
@@ -33,28 +35,53 @@ import './editor.scss';
  */
 export default function Edit({attributes, setAttributes}) {
 
-	let cover = {backgroundImage:`url(${attributes.mediaURL})`}
+	let coverURL = {backgroundImage:`url(${attributes.mediaURL})`};
+
+	const [ className, setClassName ] = useState( '' );
 
 	return (
 		<div { ...useBlockProps() }>
+			<InspectorControls>
+			<Panel>
+				<PanelRow>
+					<PanelBody title='test'>
+						<TextControl
+							label="Century"
+							value={attributes.displayCentury}
+							onChange={(newCentury)=>setAttributes({displayCentury:newCentury})}
+						/>
+						<TextControl
+							label="Decade"
+							value={attributes.displayDecade}
+							onChange={(newDecade)=>setAttributes({displayDecade:newDecade})}
+						/>
+					</PanelBody>
+				</PanelRow>
+				<PanelRow>
+					<PanelBody title='test'>
+						<MediaPlaceholder
+							onSelect = {
+								( el ) => {
+									setAttributes( { mediaURL: el.url } );
+								}
+							}
+							allowedTypes = { [ 'image' ] }
+							multiple = { false }
+							labels = { { title: 'The Image' } }
 
-		<MediaPlaceholder
-			onSelect = {
-				( el ) => {
-					setAttributes( { mediaURL: el.url } );
-				}
-			}
-			allowedTypes = { [ 'image' ] }
-			multiple = { false }
-			labels = { { title: 'The Image' } }
-			
-		>
-		</MediaPlaceholder>
+							>
+						</MediaPlaceholder>
+					</PanelBody>
+				</PanelRow>
+			</Panel>
 
-		<span class="displayYear displayCentury">19</span>
-		<span class="displayYear displayDecade">70</span>
+			</InspectorControls>
 
-		<div class="entryCover" style={cover}></div>
+
+		<span class="displayYear displayCentury">{attributes.displayCentury}</span>
+		<span class="displayYear displayDecade">{attributes.displayDecade}</span>
+
+		<div class="entryCover" style={coverURL}></div>
 		<InnerBlocks/>
 		</div>
 	);
