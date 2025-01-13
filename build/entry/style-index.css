@@ -35,7 +35,7 @@
   left: 90%;
 }
 
-.wp-block-timeline-entry :is(.block-editor-inner-blocks) {
+.wp-block-timeline-entry :is(.entryContent, .block-editor-inner-blocks) {
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   padding: 2rem;

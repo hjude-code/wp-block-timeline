@@ -31,8 +31,7 @@
 	left: 90%;
 }
 
-.wp-block-timeline-entry :is(.block-editor-inner-blocks){
-	// background-color: white;
+.wp-block-timeline-entry :is(.entryContent, .block-editor-inner-blocks){
 	backdrop-filter:blur(50px) ;
 	padding: 2rem;
 	margin-top: -2rem;
