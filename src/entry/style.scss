@@ -5,9 +5,29 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-timeline-entry .entryCover {
+ .wp-block-timeline-entry{
+	position: relative;
+ }
+
+ .wp-block-timeline-entry .entryCover {
 	width: 100%;
 	aspect-ratio: 4 / 2;
+
+}
+
+.wp-block-timeline-entry .displayYear{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size:20vw;
+	font-weight: bolder;
+	z-index: 10;
+}
+.wp-block-timeline-entry .displayYear.displayCentury{
+	right: 90%;
+}
+.wp-block-timeline-entry .displayYear.displayDecade{
+	left: 90%;
 }
 
 .wp-block-timeline-entry :is(.block-editor-inner-blocks){
