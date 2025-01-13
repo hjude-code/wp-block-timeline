@@ -7,8 +7,9 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-timeline-entry {
+.wp-block-timeline-entry .entryCover {
   width: 100%;
+  aspect-ratio: 4/2;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

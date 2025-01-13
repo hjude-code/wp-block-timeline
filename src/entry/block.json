@@ -10,7 +10,17 @@
 	"example": {},
 	"supports": {
 		"html": false,
-		"align": true
+		"align": true,
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true
+		}
+	},
+	"attributes": {
+		"mediaURL":{
+			"type":"string",
+			"default":"#"
+		}
 	},
 	"textdomain": "timeline",
 	"editorScript": "file:./index.js",

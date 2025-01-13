@@ -11,7 +11,9 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks, MediaPlaceholder, MediaUpload } from '@wordpress/block-editor';
+
+
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,11 +31,27 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
+export default function Edit({attributes, setAttributes}) {
+
+	let cover = {backgroundImage:`url(${attributes.mediaURL})`}
+
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Timeline – hello from the editor!', 'timeline' ) }
-			<InnerBlocks/>
-		</p>
+		<div { ...useBlockProps() }>
+
+		<MediaPlaceholder
+			onSelect = {
+				( el ) => {
+					setAttributes( { mediaURL: el.url } );
+				}
+			}
+			allowedTypes = { [ 'image' ] }
+			multiple = { false }
+			labels = { { title: 'The Image' } }
+			
+		>
+		</MediaPlaceholder>
+		<div class="entryCover" style={cover}></div>
+		<InnerBlocks/>
+		</div>
 	);
 }

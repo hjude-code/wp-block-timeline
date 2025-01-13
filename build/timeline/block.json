@@ -11,7 +11,10 @@
   "supports": {
     "html": false,
     "align": true,
-    "layout": true
+    "layout": true,
+    "background": {
+      "backgroundImage": true
+    }
   },
   "textdomain": "timeline",
   "editorScript": "file:./index.js",

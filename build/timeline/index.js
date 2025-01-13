@@ -203,7 +203,7 @@ module.exports = window["wp"]["i18n"];
   \*********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"timeline/timeline","version":"0.1.0","title":"Timeline","category":"widgets","icon":"smiley","description":"A Timeline Container","example":{},"supports":{"html":false,"align":true,"layout":true},"textdomain":"timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"timeline/timeline","version":"0.1.0","title":"Timeline","category":"widgets","icon":"smiley","description":"A Timeline Container","example":{},"supports":{"html":false,"align":true,"layout":true,"background":{"backgroundImage":true}},"textdomain":"timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
