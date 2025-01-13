@@ -11,7 +11,16 @@
   "supports": {
     "html": false,
     "align": true,
-    "layout": true
+    "layout": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "padding": true,
+        "blockGap": true
+      }
+    }
   },
   "textdomain": "timeline",
   "editorScript": "file:./index.js",
