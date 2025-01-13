@@ -2,10 +2,10 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "timeline/timeline",
-	"version": "0.1.0",
+	"version": "0.1.5",
 	"title": "Timeline",
-	"category": "widgets",
-	"icon": "smiley",
+	"category": "design",
+	"icon": "excerpt-view",
 	"description": "A Timeline Container",
 	"example": {},
 	"supports": {

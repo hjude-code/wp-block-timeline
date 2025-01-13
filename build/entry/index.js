@@ -282,7 +282,7 @@ module.exports = window["wp"]["i18n"];
   \******************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"timeline/entry","version":"0.1.0","title":"Timeline Entry","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false,"align":true,"background":{"backgroundImage":true,"backgroundSize":true}},"attributes":{"mediaURL":{"type":"string","default":"#"},"displayCentury":{"type":"string","default":"19"},"displayDecade":{"type":"string","default":"70"}},"textdomain":"timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"timeline/entry","version":"0.1.0","title":"Timeline Entry","category":"design","icon":"flag","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false,"align":true,"background":{"backgroundImage":true,"backgroundSize":true}},"attributes":{"mediaURL":{"type":"string","default":"#"},"displayCentury":{"type":"string","default":"19"},"displayDecade":{"type":"string","default":"70"}},"textdomain":"timeline","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

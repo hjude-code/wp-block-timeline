@@ -4,8 +4,8 @@
   "name": "timeline/entry",
   "version": "0.1.0",
   "title": "Timeline Entry",
-  "category": "widgets",
-  "icon": "smiley",
+  "category": "design",
+  "icon": "flag",
   "description": "Example block scaffolded with Create Block tool.",
   "example": {},
   "supports": {
